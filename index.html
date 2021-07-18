@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,53 +13,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   <nav>
-       <a href="#">Fonte da Tecnologia</a>
-       <ul>
+    <nav>
+        <a href="#">Fonte da Tecnologia</a>
+        <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#contato">Contato</a></li>
-       </ul>
+            <li><a href="#about">About</a></li>
+        </ul>
     </nav>
 
     <header id="topo">
         <h1>Tech Friday</h1>
-        <p>Venha para a nossa loja e encontre os melhores preços e os melhores descontos!</p>
+        <h2>Venha para a nossa loja e encontre os melhores preços e os melhores descontos!</h2>
         <a href="#products">Ver mais</a>
+        <h1>Contagem regressiva para a TECH FRIDAY</h1>
+
+        <div id="countdown" class="countdown">
+            <div class="time">
+                <h2 id="days">00</h2>
+                <small>dias</small>
+            </div>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <small>horas</small>
+            </div>
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>minutos</small>
+            </div>
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>segundos</small>
+            </div>
+        </div>
     </header>
 
     <section id="products">
         <h2>Produtos</h2>
 
         <div>
-            <img src="images/notebook.jpg" alt="notebook"/>
-            <h3>R$ 2.400,00</h3>
+            <img src="images/notebook.jpg" alt="notebook" />
+            <h3>R$ 4.400,00 COM 10% DE DESCONTO</h3>
         </div>
         <div>
-            <img src="images/headphone.jpg" alt="notebook"/>
-            <h3>R$ 1000,00</h3>
+            <img src="images/headphone.jpg" alt="notebook" />
+            <h3>R$ 1000,00 COM 10% DE DESCONTO</h3>
+        </div>
+        <div>
+            <img src="images/headphone2.jpg" alt="notebook" />
+            <h3>R$ 1200,00 COM 10% DE DESCONTO</h3>
         </div>
     </section>
-        
+
 
     <section id="about">
         <h2>About</h2>
-        <p>Somos uma loja especializada em trazer os melhores produtos 
-        tecnológicos com os melhores preços do mercado!     
+        <p>Somos uma loja especializada em trazer os melhores produtos
+            tecnológicos com os melhores preços do mercado!
         </p>
-        <input type="text" placeholder="Digite seu e-mail">
-        <button class="botao">
-            <p>Quero me cadastrar</p>
-        </button>
+        <form id="form">
+            <p>Cadastre seu e-mail para receber informações dos melhores preços e descontos!</p>
+            <input type="text" placeholder="Digite seu e-mail" id="email">
+            <input type="submit" value="Cadastrar" >
+        </form>
     </section>
-    
+
+
     <footer>
-        <a href="#home">Voltar</a>
+        <a href="#">Voltar</a>
         <p>
             Desenvolvido por Luan Moraes para o desafio da Hiring Coders.
         </p>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

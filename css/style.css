@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body {
     font-family: Nunito, sans-serif;
     color: #1C1C1C;
+    font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: Cambria, sans-serif;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 nav {
@@ -92,11 +95,18 @@ header p {
     width: 50%;
     height: 50px;
     background-color: #F55632;
-    
+    margin-top: 2px;
 }
 
 .botao p {
     color: #FFFFFF;
+}
+
+.input {
+    border-radius: 18px;
+    width: 50%;
+    height: 40px;
+    background-color: #FFFFFF;  
 }
 
 #products {
@@ -107,15 +117,6 @@ header p {
     background-color: #191970;
 }
 
-#products h2, h3 {
-    color: #FFFFFF;
-}
-
-#products img {
-    width: 50%;
-    
-}
-
 #products div {
     display: flex;
     flex-direction: column;
@@ -124,6 +125,16 @@ header p {
     margin-top: 50px;
     
 }
+
+#products h2, h3 {
+    color: #FFFFFF;
+}
+
+#products img {
+    width: 50%;
+    border-radius: 1em;
+}
+
 
 footer { 
     background-color: #191970;
@@ -159,5 +170,61 @@ footer p {
         min-height: 250px;
     }
 
+    .time {
+        margin: 5px;
+    }
+    
+    .time h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+        
+    .time small {
+        font-size: 10px;
+        color: #F55632;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+    
+    
     
 }
+/*Relogio*/
+.countdown {
+    display: flex;
+    transform: scale(2);
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  
+  .time h2 {
+    margin: 0 0 5px;
+    color: #F55632;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 45px;
+    }
+  
+    .time {
+      margin: 5px;
+    }
+  
+    .time h2 {
+      font-size: 12px;
+      margin: 0;
+    }
+  
+    .time small {
+      font-size: 10px;
+    }
+  }
